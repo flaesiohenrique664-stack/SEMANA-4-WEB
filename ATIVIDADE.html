@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregável Semana 04 - Arrays, DOM e Eventos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .destaque {
+            background-color: #ffeb3b;
+            font-weight: bold;
+        }
+        .feito {
+            text-decoration: line-through;
+            color: gray;
+        }
+        ul {
+            margin-top: 10px;
+        }
+        li {
+            cursor: pointer;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bloco 2: DOM -->
+    <h1 id="titulo">Título Original</h1>
+    
+    <p class="texto">Este é o primeiro parágrafo de teste.</p>
+    <p class="texto">Este é o segundo parágrafo de teste.</p>
+    <p class="texto">Este é o terceiro parágrafo de teste.</p>
+
+    <h2>Lista de Tarefas / Itens</h2>
+    <ul id="lista">
+        <!-- Itens estáticos para o Event Delegation -->
+        <li>Item estático 1</li>
+        <li>Item estático 2</li>
+        <li>Item estático 3</li>
+    </ul>
+
+    <!-- Bloco 3: Eventos -->
+    <h2>Seção de Interações</h2>
+    <button id="botao">Clique Aqui</button>
+    <br><br>
+
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" placeholder="Digite seu nome...">
+    <br><br>
+
+    <!-- Formulário -->
+    <form id="formulario">
+        <label for="tarefa">Nova Tarefa: </label>
+        <input type="text" id="tarefa" placeholder="Digite uma nova tarefa...">
+        <button type="submit">Adicionar Tarefa</button>
+    </form>
+
+    <!-- Script Principal -->
+    <script src="app.js"></script>
+</body>
+</html>

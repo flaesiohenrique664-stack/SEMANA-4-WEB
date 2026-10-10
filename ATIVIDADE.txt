@@ -1,0 +1,31 @@
+# Entregável de Desenvolvimento Web – Semana 04 (Arrays, DOM e Eventos)
+
+Projeto prático desenvolvido para consolidar os conhecimentos de manipulação avançada de arrays, interação dinâmica com o Document Object Model (DOM) e gerenciamento eficiente de eventos em JavaScript puro (Vanilla JS).
+
+## Descrição do Projeto
+A aplicação consiste em uma página web interativa executada diretamente no navegador, cujos resultados e interações são testados e visualizados em tempo real através do Console do Desenvolvedor (`F12`).
+
+## Conteúdos e Conceitos Abordados
+
+### 1. Bloco 1 – Arrays e Métodos
+- **`forEach()`**: Utilizado exclusivamente para percorrer coleções e executar efeitos colaterais (como impressões no console), sem retornar um novo array.
+- **`map()`**: Percorre o array original aplicando uma função de transformação em cada elemento e **retorna um novo array** do mesmo tamanho, mantendo o original intacto.
+- **`filter()`**: Avalia uma condição booleana para cada item e **retorna um novo array** contendo apenas os elementos que passaram no teste.
+- **`reduce()`**: Acumula os valores de um array em um único resultado final (como uma soma ou totalização), percorrendo item por item com o auxílio de um acumulador.
+
+### 2. Bloco 2 – Manipulação do DOM
+- Utilização de seletores modernos como `querySelector` e `querySelectorAll` para referenciar elementos HTML na árvore do DOM.
+- Modificação segura de conteúdos textuais utilizando propriedades como `textContent`.
+- Criação dinâmica de elementos (`createElement`) e inserção estrutural (`appendChild`, `innerHTML`).
+- Manipulação fina de classes CSS via `classList` (`add`, `contains`, `toggle`), permitindo estilização dinâmica em tempo real.
+
+### 3. Bloco 3 – Eventos e Event Delegation
+- **`addEventListener`**: Associação limpa e moderna de ouvintes de eventos de clique (`click`), passagem do mouse (`mouseover`), digitação (`keyup`) e submissão de formulários (`submit`).
+- **Prevenção de Comportamento Padrão**: Uso de `e.preventDefault()` no formulário para evitar o recarregamento automático da página, preservando o estado da aplicação.
+- **Event Delegation (Delegação de Eventos)**: Técnica essencial que consiste em adicionar um **único** `listener` de eventos em um elemento ancestral comum (neste caso, a lista `<ul>`) em vez de iterar e adicionar ouvintes individuais a cada item (`<li>`). 
+  - *Vantagens:* Melhora significativamente a performance e o uso de memória, além de garantir automaticamente que **elementos criados dinamicamente no futuro** herdem o comportamento de clique sem a necessidade de reanexar novos ouvintes.
+
+## Como Executar
+1. Clone ou baixe este repositório contendo os arquivos `index.html` e `app.js` na mesma pasta.
+2. Abra o arquivo `index.html` em qualquer navegador web moderno.
+3. Pressione `F12` (ou clique com o botão direito > Inspecionar) para abrir o **Console** e acompanhar os logs executados pelos scripts.
